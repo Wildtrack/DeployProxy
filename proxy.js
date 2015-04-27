@@ -2,8 +2,8 @@ var httpProxy = require ('http-proxy'),
 	http = require('http'),
   url = require('url');
 
-var mainAddress = {target:'http://thanatos.lodr.me'},     //main
-    canaryAddress = {target:'http://kronos.lodr.me'};     //canary
+var mainAddress = {target:'http://livedockerdeploy-dev.elasticbeanstalk.com/'},     //main
+    canaryAddress = {target:'http://canarydockerdeploy-dev.elasticbeanstalk.com/'};     //canary
 
 CANARYCUTOFF = 0.5; // below = canary, above = notcanary
 CANARY = false;
